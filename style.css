@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Nunito+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Nunito+Sans&family=Poppins&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffe26d;
+    height: auto;
+}
+
+nav{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    
+    
+}
+
+.brand img{
+    width: 163px;
+    padding: 0 8px;
+    padding-bottom: 15px;
+}
+
+nav ul li{
+    padding: 0 15px;
+}
+
+.container{
+    min-height: auto;
+    background-color:  rgba(0, 0, 0, 0.25),;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)) ,url(Images/background.jpg) ;
+    background-size: cover;
+
+}
+
+.songBottom{
+    position: sticky;
+    height: 121px;
+    background-color: black;
+    bottom: 0;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+
+}
+
+.icons{
+    margin-top:12px ;
+}
+.icons i{
+    cursor: pointer;
+    margin:5px ;
+}
+
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+    
+}
+
+.songList{
+    width: 100%;
+}
+.songItem{
+    height: 50px;
+    background-color: white;
+    width: 40%;
+    color: black;
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+
+
+
+.songItem img{
+    
+    width: 63px;
+    margin: 15px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+    margin: 0 0 0 5px;
+    font-size: 25px;
+
+}
+
+.progress-time{
+    display: flex;
+}
+
+
+
+.songInfo{
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .songItem{
+       
+        width: 50%;
+    
+    }
+  }
+@media only screen and (max-width: 855px) {
+    .songItem{
+       
+        width: 60%;
+    
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .songItem{
+        width: 70%;
+    }
+    .songName{
+        font-size: 15px;
+    }
+   
+    .songInfo{
+        position: relative;
+        left: auto;
+    }
+    
+    .songBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 575px) {
+    .songItem{
+        width: 80%;
+    }
+    .songItem img{
+    
+        width: 53px;
+       margin: 12px;
+    }
+    .songName{
+        font-size: 13px;
+    }
+
+    .songBottom{
+        padding: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 455px) {
+
+  
+    
+    .brand img{
+        width: 103px;
+        padding: 0 8px;
+        padding-bottom: 15px;
+    }
+    
+    nav ul li{
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .container{
+        min-height: auto;
+        background-color:  rgba(0, 0, 0, 0.25),;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        margin: 30px auto;
+        width: 75%;
+        border-radius: 12px;
+        padding: 34px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)) ,url(Images/background.jpg) ;
+        background-size: cover;
+    
+    }
+
+    .songList h1{
+        font-size: 20px;
+    }
+    
+    .songItem{
+        height: 30px;
+        background-color: white;
+        width: 80%;
+        color: black;
+        margin: 13px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    
+    }
+    
+    .songItem img{
+    
+        width: 33px;
+        margin: 15px 5px;
+        border-radius: 34px;
+    }
+    .songName{
+        font-size: 8px;
+    }
+
+    .timestamp{
+        margin: 0 10px;
+    }
+    
+    .timestamp i{
+        cursor: pointer;
+        margin: 0 0 0 5px;
+        font-size: 12px;
+    
+    }
+    .progress-time{
+        margin: 0 5px;
+    }
+   
+    .songBottom{
+        padding: auto;
+    }
+  }
